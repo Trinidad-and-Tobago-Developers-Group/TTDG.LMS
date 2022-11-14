@@ -1,0 +1,5 @@
+﻿$env:ConnectionStrings:Database='Data Source=mydbserver.database.windows.net;Initial Catalog=mydb;User ID=usr;Password=pwd;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False'
+
+add-migration lms-001 -context LMSDbContext -project TTDG.LMS.DataContext.Migrations
+
+update-database -context LMSDbContext
